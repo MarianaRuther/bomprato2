@@ -1,0 +1,10 @@
+// JSON Document
+{
+"manifest_version": 2,
+"name": "BomPrato_Novo",
+"description": "Bom Prato",
+"version": "1.1",
+"icons": {
+"128": "128.icon"
+	}
+}
