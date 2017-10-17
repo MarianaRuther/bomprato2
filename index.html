@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Bom Prato</title>
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" type="images" href="images/favicon.ico"/>
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -10,12 +11,21 @@
 
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 
-<link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#f65316">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Cookery Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(function () {
+        console.log('service worker registered');
+      })
+      .catch(function () {
+        console.warn('service worker failed');
+      });
+  }
+</script>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---->
 <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -40,17 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
  new WOW().init();
 </script>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(function () {
-        console.log('service worker registered');
-      })
-      .catch(function () {
-        console.warn('service worker failed');
-      });
-  }
-</script>
+<
 </head>
 <body>
  <div class="header">
